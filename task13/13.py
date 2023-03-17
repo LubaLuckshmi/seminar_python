@@ -6,4 +6,22 @@
 # Пользователь вводит число N – общее количество рассматриваемых дней (1 ≤ N ≤ 100). В следующих строках располагается
 # N целых чисел.
 #
-# Каждое число – среднесуточная температур
+# Каждое число – среднесуточная температура
+
+n = int(input("Количество дней "))
+max_snowbreak = 0
+current_snowbreak = 0
+
+for _ in range(n):
+    current_T = int(input("Введите температуру: "))
+    if current_T > 0:
+        current_snowbreak +=1
+    elif current_snowbreak > max_snowbreak:
+        max_snowbreak = current_snowbreak
+        current_snowbreak = 0
+if current_snowbreak > max_snowbreak:
+    max_snowbreak = current_snowbreak
+
+print(max_snowbreak)
+
+
