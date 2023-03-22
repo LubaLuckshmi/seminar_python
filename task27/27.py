@@ -3,3 +3,16 @@
 # слова разделены одним или большим числом пробелов или символами
 # конца строки. Определите, сколько различных
 # слов содержится в этом тексте.
+
+input_str = input("введите текст: ").upper() + " "
+count = 1
+word_list = set()
+word = ""
+for char in input_str:
+    if char != " ": 
+        word += char 
+    else: 
+        word_list.add(word) 
+        word = ""
+        
+print(len(word_list))
