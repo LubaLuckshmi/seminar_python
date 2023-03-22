@@ -117,5 +117,20 @@ for ind in range(0, len(a)):
     a[ind] = int(a[ind])
 print(a)
 
+-----------
+проверка словаря на ключ
+a = {1: 2, 3: 4, 5: 6}
+print(a.get(6, 'такого ключа нет'))
+
+print(a.items())
+for key, value in a.items():
+    if value == 6:
+    print(key)
+--------------
+
+задать рандомный список 
+some_list = [random.randint(300,400) for _ in range (100)]
+
+
 '''
 
