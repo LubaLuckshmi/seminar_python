@@ -16,9 +16,9 @@ def max_to_min(input_list: list):
 
 
 input_list = []
-list_len = int(input("Введите количество элементов "))
+list_len = int(input("Введите количество оценок у Василия: "))
 for _ in range(list_len):
-    input_list.append(int(input("Введите число: ")))
+    input_list.append(int(input("Введите оценку: ")))
 print(input_list)
 
 max_to_min(input_list)
