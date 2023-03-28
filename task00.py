@@ -13,7 +13,6 @@ print(summa)
 
 ----------
 
-
 number = int(input())
 summa = 0
 while number > 0:
@@ -26,6 +25,14 @@ print(summa)
 for letter in 'привет'
     print(letter)
 
+----------
+интерполяция
+
+print(a, '-', b, '-', c)
+print('{1} - {0} - {2}'.format(a, b, c))
+print(f'{a} - {b} - {c}')
+/n #Перенос слова
+/' #печатает '
 -----------
 Переменная - итерратор используется:
 for i in range(1, 11):
