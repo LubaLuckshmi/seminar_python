@@ -151,6 +151,45 @@ for key, value in a.items():
 задать рандомный список 
 some_list = [random.randint(300,400) for _ in range (100)]
 
+-------------
+def square(a):
+return a**2
 
+some_list = [1, 2, 3, 4, 5]
+print(list(map(square, some_list)))
+
+for i in range(len(some_list)):
+    some_list[i] = some_list[i] **2
+
+-----------
+def square(a):
+return a**2
+
+some_list = [1, 2, 3, 4, 5]
+print(list(map(lambda a: a ** 2, some_list)))
+
+------------
+some_list = [1, 2, 3, 4, 5]
+print(list(filter(lambda x: x%2==0, some_list)))
+
+map применяется к каждому обьекту
+filter только ддля тех к которому применяется условие
+lambda строчное написание простых функций
+
+-----------
+some_list = [1, 2, 3, 4, 5]
+some_list2 = ['1', '2', '3', '4', '5']
+print(list(zip(some_list, some_list2)))
+
+for i, j in zip(some_list, some_list2):
+    print(i,j)
+
+обьединяет элементы списков в кортежи
+
+-----------
+some_list = [1, 2, 3, 4, 5]
+print(list(enumerate(some_list)))
+
+нумерует элементы списка с 0
 '''
 
